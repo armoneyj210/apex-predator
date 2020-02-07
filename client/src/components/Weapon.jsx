@@ -56,7 +56,7 @@ export default class Weapon extends Component {
               <div>
                 <h3>{weapon.name}</h3>
               </div>
-              <Link to={`/weapon/${weapon._id}`}>
+              <Link to={`/weapon/${weapon.id}`}>
                 <img src={weapon.image_url} alt={weapon.name} />
               </Link>
             </div>
