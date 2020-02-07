@@ -1,38 +1,154 @@
 .App {
   text-align: center;
+  /* color: azure; */
+}
+body {
+  background: url(https://i.imgur.com/1RHbmJz.jpg) fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 4em;
+}
+button,
+.add-submit {
+  padding: 1em;
+  width: 15em;
+  border-radius: 0.25em;
+  font-weight: 800;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px whitesmoke;
+  border: none;
+  font-size: 0.75em;
+  font-family: "Kalam", cursive;
+  box-shadow: 2px 2px 2px black;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+button:hover,
+.add-submit:hover {
+  background-color: chocolate;
+}
+button:focus {
+  outline: none;
+}
+.home-cta:hover {
+  border: 1px solid black;
+}
+.home-cta {
+  background-color: chocolate;
+  padding: 1em;
+  width: 15em;
+  margin: 1em;
+  margin-left: 16em;
+  color: black;
+  font-size: 1em;
+  border-radius: 0.25em;
+  font-weight: 800;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px whitesmoke;
+  border: none;
+  font-family: "Kalam", cursive;
+  box-shadow: 2px 2px 2px black;
+}
+img {
+  border: 10px solid whitesmoke;
+  width: 15em;
+  height: 15em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-header,
+.plant-header,
+.chemical-header,
+.disease-header {
+  font-family: "Kalam", cursive;
+  margin: 2.5em;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-header {
+  font-size: 3em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-header2 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 2em;
+  margin-top: -2em;
+  margin-left: 6em;
+  color: whitesmoke;
+  font-family: "Kalam", cursive;
+  font-size: 2em;
+}
+.home-container {
+  text-align: left;
+}
+.home-logo {
+  width: 15em;
+  height: 4em;
+  border: none;
+}
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-container {
+  width: 100%;
+  font-family: "Kalam", cursive;
+  font-size: 1.15em;
+  display: flex;
+  height: 4em;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background: whitesmoke;
+  padding: 0 12px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 5px 5px #418047;
+}
+.navbar-item {
+  padding: 1em;
+  text-decoration: none;
+  margin-right: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.disease-item {
+  float: left;
+  margin: 1em;
+}
+.disease-desc {
+  font-family: "Kalam", cursive;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.25em;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+/* .chemical-header {
+  background-color: #418047;
+} */
+.plant-list,
+.disease-list,
+.chemical-list {
+  margin-top: -3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plant-item {
+  float: left;
+  margin: 1em;
+}
+
+.chem-item {
+  float: left;
+  margin: 1em;
+  width: 25%;
 }
