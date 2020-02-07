@@ -6,11 +6,14 @@ export default class Map extends Component {
     map: []
   };
   updatePage = () => {
-    axios.get("/api/v1/map").then(res => {
+    axios.get("/api/v1/map/").then(res => {
       this.setState({ map: res.data });
       console.log(this.state.map);
     });
   };
+  componentDidMount() {
+    this.updatePage();
+  }
   render() {
     let maps = this.state.map.map(map => {
       return (

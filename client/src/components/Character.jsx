@@ -63,7 +63,7 @@ export default class Character extends Component {
               <div>
                 <h3>{character.name}</h3>
               </div>
-              <Link to={`/character/${character._id}`}>
+              <Link to={`/character/${character.id}`}>
                 <img src={character.image_url} alt={character.name} />
               </Link>
             </div>
@@ -91,7 +91,7 @@ export default class Character extends Component {
             </div>
             <br />
             <div className="character-header">
-              <label htmlFor="character-description">Description:</label>
+              <label htmlFor="character-description">Background:</label>
               <input
                 type="text"
                 name="background"
