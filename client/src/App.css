@@ -64,6 +64,10 @@ img {
   width: 54.75%;
   height: 20em;
 }
+.char-name {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
 .home-header {
   font-family: "Teko", sans-serif;

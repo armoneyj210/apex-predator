@@ -61,7 +61,7 @@ export default class Character extends Component {
           <div className="character-list">
             <div className="character-item">
               <div>
-                <h1>{character.name}</h1>
+                <h1 className="char-name">{character.name}</h1>
               </div>
               <Link to={`/character/${character.id}`}>
                 <img
