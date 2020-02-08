@@ -77,7 +77,7 @@ export default class Character extends Component {
     });
     return (
       <div>
-        <h1 className="character-header">Characters</h1>
+        <h1 className="char-name">Characters</h1>
 
         <br />
         {this.state.characterForm ? (
