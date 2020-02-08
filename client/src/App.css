@@ -3,9 +3,9 @@
   /* color: azure; */
 }
 html {
-  background: url(https://steamuserimages-a.akamaihd.net/ugc/993513763546122552/DCBE6D041DEDFA82C8A381614CEC904DC8898B3A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
+  /* background: url(https://steamuserimages-a.akamaihd.net/ugc/993513763546122552/DCBE6D041DEDFA82C8A381614CEC904DC8898B3A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
     fixed no-repeat;
-  background-size: cover;
+  background-size: cover; */
   width: 100%;
 }
 body {
@@ -146,4 +146,12 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 700;
+}
+._1EQJpXY7ExS04odI1YBBl {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
