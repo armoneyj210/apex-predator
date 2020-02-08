@@ -122,7 +122,8 @@ img {
   margin-right: 1em;
 }
 
-.weapon-item {
+.weapon-item,
+.map-item {
   float: left;
   margin: 0.5em;
 }
