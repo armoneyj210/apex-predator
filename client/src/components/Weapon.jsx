@@ -9,7 +9,8 @@ export default class Weapon extends Component {
       name: "",
       weapon_type: "",
       ammo: "",
-      image_url: ""
+      image_url: "",
+      description: ""
     },
     weaponForm: false
   };
@@ -41,7 +42,8 @@ export default class Weapon extends Component {
           name: "",
           weapon_type: "",
           ammo: "",
-          image_url: ""
+          image_url: "",
+          description: ""
         }
       });
     });
@@ -53,9 +55,8 @@ export default class Weapon extends Component {
         <div className="weapon-header ">
           <div className="weapon-list">
             <div className="weapon-item">
-              <div>
-                <h3>{weapon.name}</h3>
-              </div>
+              <h3>{weapon.name}</h3>
+
               <Link to={`/weapon/${weapon.id}`}>
                 <img src={weapon.image_url} alt={weapon.name} />
               </Link>
@@ -99,6 +100,16 @@ export default class Weapon extends Component {
                 type="text"
                 name="image_url"
                 value={this.state.newWeapon.image_url}
+                onChange={this.handleNewFormChange}
+              />
+            </div>
+            <br />
+            <div className="weapon-header">
+              <label htmlFor="weapon-desc">Description:</label>
+              <input
+                type="text"
+                name="description"
+                value={this.state.newWeapon.description}
                 onChange={this.handleNewFormChange}
               />
             </div>

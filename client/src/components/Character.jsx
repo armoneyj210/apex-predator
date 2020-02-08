@@ -61,10 +61,14 @@ export default class Character extends Component {
           <div className="character-list">
             <div className="character-item">
               <div>
-                <h3>{character.name}</h3>
+                <h1>{character.name}</h1>
               </div>
               <Link to={`/character/${character.id}`}>
-                <img src={character.image_url} alt={character.name} />
+                <img
+                  className="char-img"
+                  src={character.image_url}
+                  alt={character.name}
+                />
               </Link>
             </div>
           </div>
@@ -74,9 +78,7 @@ export default class Character extends Component {
     return (
       <div>
         <h1 className="character-header">Characters</h1>
-        <div>
-          <button onClick={this.handleToggleNewForm}>Add New Character</button>
-        </div>
+
         <br />
         {this.state.characterForm ? (
           <form onSubmit={this.handleSubmit}>
@@ -169,6 +171,9 @@ export default class Character extends Component {
         ) : (
           characters
         )}
+        <div>
+          <button onClick={this.handleToggleNewForm}>Add New Character</button>
+        </div>
       </div>
     );
   }

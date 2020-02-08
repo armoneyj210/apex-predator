@@ -8,7 +8,8 @@ export default class SingleWeapon extends Component {
       name: "",
       image_url: "",
       weapon_type: "",
-      ammo: ""
+      ammo: "",
+      description: ""
     },
     editForm: false,
     returnHome: false
@@ -92,6 +93,16 @@ export default class SingleWeapon extends Component {
             </div>
             <br />
             <div className="weapon-header">
+              <label htmlFor="weapon-desc">Description:</label>
+              <input
+                type="text"
+                name="description"
+                value={this.state.weapon.description}
+                onChange={this.editFormChange}
+              />
+            </div>
+            <br />
+            <div className="weapon-header">
               <label htmlFor="weapon-ammo">Ammo:</label>
               <input
                 type="text"
@@ -106,12 +117,13 @@ export default class SingleWeapon extends Component {
         ) : (
           <div>
             <img
-              className="weapon-header"
+              className="weapon-img"
               src={this.state.weapon.image_url}
               alt="weapon"
             />
             <p className="weapon-desc">{this.state.weapon.weapon_type}</p>
-            <div>Ammo:{this.state.weapon.ammo}</div>
+            <p className="weapon-desc">{this.state.weapon.description}</p>
+            <div>Ammo: {this.state.weapon.ammo}</div>
           </div>
         )}
         <div>

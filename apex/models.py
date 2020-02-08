@@ -22,6 +22,7 @@ class Weapon(models.Model):
     weapon_type = models.CharField(max_length=30)
     ammo = models.CharField(max_length=20)
     image_url = models.TextField()
+    description = models.TextField()
 
     def __str__(self):
         return self.name

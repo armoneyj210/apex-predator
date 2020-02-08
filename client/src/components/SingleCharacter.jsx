@@ -19,7 +19,7 @@ export default class SingleCharacter extends Component {
   };
   updatePage = () => {
     axios
-      .get(`/api/v1/character/${this.props.match.params.characterId}`)
+      .get(`/api/v1/character/${this.props.match.params.characterId}/`)
       .then(res => {
         this.setState({ character: res.data });
       });
@@ -59,7 +59,7 @@ export default class SingleCharacter extends Component {
   render() {
     return (
       <div>
-        {this.state.returnHome === true ? <Redirect to="/character" /> : null}
+        {this.state.returnHome === true ? <Redirect to="/character/" /> : null}
         <div>
           <h1 className="character-header">{this.state.character.name}</h1>
         </div>
