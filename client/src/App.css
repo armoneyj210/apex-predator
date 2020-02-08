@@ -131,6 +131,12 @@ img {
   width: 55%;
   height: 20em;
 }
+.map-image {
+  width: 30em;
+  height: 30em;
+  margin: 3em;
+  margin-left: 7em;
+}
 
 a {
   text-decoration: none;
