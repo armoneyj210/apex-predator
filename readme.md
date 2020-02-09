@@ -18,3 +18,5 @@ Have you ever wanted to play Apex Legends, but just didn't know where to start? 
 - [Depoy App](#)
 
 ## ERD and Wireframe
+
+![ERD](/Desktop/Apex Legends.jpeg)

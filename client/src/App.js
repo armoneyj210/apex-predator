@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import video from "../src/images/mylivewallpapers.com-Apex-Legends-Banner.mp4";
 import Character from "./components/Character";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import Map from "./components/Map";
 import Weapon from "./components/Weapon";
 import WeaponType from "./components/WeaponType";
