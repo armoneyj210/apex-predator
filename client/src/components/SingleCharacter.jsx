@@ -61,11 +61,11 @@ export default class SingleCharacter extends Component {
       <div>
         {this.state.returnHome === true ? <Redirect to="/character/" /> : null}
         <div>
-          <h1 className="character-header">{this.state.character.name}</h1>
+          <h1 className="char-desc">{this.state.character.name}</h1>
         </div>
         {this.state.editForm ? (
           <form onSubmit={this.submitButtonAction}>
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-name">Name:</label>
               <input
                 type="text"
@@ -75,7 +75,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-description">Description:</label>
               <input
                 type="text"
@@ -85,7 +85,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-image">Image:</label>
               <input
                 type="text"
@@ -95,7 +95,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-skin">Skin:</label>
               <input
                 type="text"
@@ -105,7 +105,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Passive Ability:</label>
               <input
                 type="text"
@@ -115,7 +115,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Ability:</label>
               <input
                 type="text"
@@ -125,7 +125,7 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Super:</label>
               <input
                 type="text"
@@ -135,8 +135,8 @@ export default class SingleCharacter extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
-              <label htmlFor="character-ability">Kills:</label>
+            <div className="char-desc">
+              <label htmlFor="character-ability">Kills: </label>
               <input
                 type="number"
                 name="kills"
@@ -154,24 +154,24 @@ export default class SingleCharacter extends Component {
         ) : (
           <div>
             <img
-              className="character-header"
+              className="char-desc"
               src={this.state.character.image_url}
               alt="character"
             />
-            <p className="character-desc">{this.state.character.background}</p>
-            <div>
+            <p className="char-desc">{this.state.character.background}</p>
+            <div className="char-desc">
               <h3>Passive Ability:</h3>
               <p>{this.state.character.passive_ability}</p>
             </div>
-            <div>
+            <div className="char-desc">
               <h3>Tactical Ability:</h3>
               <p>{this.state.character.ability}</p>
             </div>
-            <div>
+            <div className="char-desc">
               <h3>Ultimate Ability:</h3>
               <p>{this.state.character.super}</p>
             </div>
-            <div>
+            <div className="char-desc">
               <h3>Kills:</h3>
               <p>{this.state.character.kills}</p>
             </div>

@@ -55,7 +55,7 @@ export default class Weapon extends Component {
         <div className="weapon-header ">
           <div className="weapon-list">
             <div className="weapon-item">
-              <h3>{weapon.name}</h3>
+              <h3 className="char-desc">{weapon.name}</h3>
 
               <Link to={`/weapon/${weapon.id}`}>
                 <img src={weapon.image_url} alt={weapon.name} />
@@ -67,7 +67,7 @@ export default class Weapon extends Component {
     });
     return (
       <div>
-        <h1 className="weapon-header">Weapons</h1>
+        <h1 className="weapon-desc">Weapons</h1>
         <div>
           <button onClick={this.handleToggleNewForm}>Add New Weapon</button>
         </div>
