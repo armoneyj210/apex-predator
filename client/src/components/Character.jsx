@@ -82,7 +82,7 @@ export default class Character extends Component {
         <br />
         {this.state.characterForm ? (
           <form onSubmit={this.handleSubmit}>
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-name">Name:</label>
               <input
                 type="text"
@@ -92,7 +92,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-description">Background:</label>
               <input
                 type="text"
@@ -102,7 +102,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-image">Image:</label>
               <input
                 type="text"
@@ -112,7 +112,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-skin">Skin:</label>
               <input
                 type="text"
@@ -122,7 +122,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Passive Ability:</label>
               <input
                 type="text"
@@ -132,7 +132,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Ability:</label>
               <input
                 type="text"
@@ -142,7 +142,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Super:</label>
               <input
                 type="text"
@@ -152,7 +152,7 @@ export default class Character extends Component {
               />
             </div>
             <br />
-            <div className="character-header">
+            <div className="char-desc">
               <label htmlFor="character-ability">Kills:</label>
               <input
                 type="number"

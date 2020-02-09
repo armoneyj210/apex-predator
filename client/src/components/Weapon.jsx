@@ -74,7 +74,7 @@ export default class Weapon extends Component {
         <br />
         {this.state.weaponForm ? (
           <form onSubmit={this.handleSubmit}>
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-name">Name:</label>
               <input
                 type="text"
@@ -84,7 +84,7 @@ export default class Weapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-name">Weapon Type:</label>
               <input
                 type="text"
@@ -94,7 +94,7 @@ export default class Weapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-image">Image:</label>
               <input
                 type="text"
@@ -104,7 +104,7 @@ export default class Weapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-desc">Description:</label>
               <input
                 type="text"
@@ -114,7 +114,7 @@ export default class Weapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-ammo">
+            <div className="weapon-desc">
               <label htmlFor="weapon-image">Ammo:</label>
               <input
                 type="text"

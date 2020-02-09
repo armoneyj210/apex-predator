@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import video from "../src/images/mylivewallpapers.com-Apex-Legends-Banner.mp4";
 import Character from "./components/Character";
 import Home from "./components/Home";
 import Map from "./components/Map";
@@ -20,7 +20,11 @@ class App extends Component {
         <div className="navbar">
           <NavBar />
         </div>
-
+        <div>
+          <video autoPlay loop>
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
         <Router>
           <Switch>
             <Route exact path="/skin" component={Skin} />
