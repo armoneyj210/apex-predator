@@ -19,4 +19,4 @@ Have you ever wanted to play Apex Legends, but just didn't know where to start? 
 
 ## ERD and Wireframe
 
-![ERD](/client/src/images/Apex Legends.jpeg)
+![ERD](/client/src/images/Apex Legends.jpg)
