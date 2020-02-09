@@ -69,7 +69,7 @@ export default class Skin extends Component {
         <br />
         {this.state.skinForm ? (
           <form onSubmit={this.handleSubmit}>
-            <div className="skin-header">
+            <div className="skin-desc">
               <label htmlFor="skin-name">Name:</label>
               <input
                 type="text"
@@ -79,7 +79,7 @@ export default class Skin extends Component {
               />
             </div>
             <br />
-            <div className="skin-header">
+            <div className="skin-desc">
               <label htmlFor="skin-image">Image:</label>
               <input
                 type="text"
