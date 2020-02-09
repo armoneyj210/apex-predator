@@ -66,7 +66,8 @@ img {
 .char-name,
 .char-desc,
 .weapon-desc,
-.map-desc {
+.map-desc,
+.skin-desc {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }

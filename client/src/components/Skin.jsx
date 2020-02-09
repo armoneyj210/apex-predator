@@ -49,7 +49,7 @@ export default class Skin extends Component {
         <div className="skin-header ">
           <div className="skin-list">
             <div className="skin-item">
-              <div>
+              <div className="skin-desc">
                 <h3>{skin.name}</h3>
               </div>
               <Link to={`/skin/${skin._id}`}>
@@ -62,7 +62,7 @@ export default class Skin extends Component {
     });
     return (
       <div>
-        <h1 className="skin-header">Skins</h1>
+        <h1 className="skin-desc">Skins</h1>
         <div>
           <button onClick={this.handleToggleNewForm}>Add New Skin</button>
         </div>
