@@ -58,11 +58,11 @@ export default class SingleWeapon extends Component {
       <div>
         {this.state.returnHome === true ? <Redirect to="/weapon" /> : null}
         <div>
-          <h1 className="weapon-header">{this.state.weapon.name}</h1>
+          <h1 className="weapon-desc">{this.state.weapon.name}</h1>
         </div>
         {this.state.editForm ? (
           <form onSubmit={this.submitButtonAction}>
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-name">Name:</label>
               <input
                 type="text"
@@ -72,7 +72,7 @@ export default class SingleWeapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-description">Weapon Type:</label>
               <input
                 type="text"
@@ -82,7 +82,7 @@ export default class SingleWeapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-image">Image:</label>
               <input
                 type="text"
@@ -92,7 +92,7 @@ export default class SingleWeapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-desc">Description:</label>
               <input
                 type="text"
@@ -102,7 +102,7 @@ export default class SingleWeapon extends Component {
               />
             </div>
             <br />
-            <div className="weapon-header">
+            <div className="weapon-desc">
               <label htmlFor="weapon-ammo">Ammo:</label>
               <input
                 type="text"
@@ -123,7 +123,7 @@ export default class SingleWeapon extends Component {
             />
             <p className="weapon-desc">{this.state.weapon.weapon_type}</p>
             <p className="weapon-desc">{this.state.weapon.description}</p>
-            <div>Ammo: {this.state.weapon.ammo}</div>
+            <div className="char-desc">Ammo: {this.state.weapon.ammo}</div>
           </div>
         )}
         <div>
