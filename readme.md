@@ -20,3 +20,4 @@ Have you ever wanted to play Apex Legends, but just didn't know where to start? 
 ## ERD and Wireframe
 
 ![ERD](https://i.imgur.com/4vzhZCA.jpg)
+![Wireframe](https://wireframe.cc/DmGGmz)
