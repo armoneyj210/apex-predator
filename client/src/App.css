@@ -2,12 +2,12 @@
   text-align: center;
   /* color: azure; */
 }
-/* html {
+html {
   background: url(https://steamuserimages-a.akamaihd.net/ugc/993513763546122552/DCBE6D041DEDFA82C8A381614CEC904DC8898B3A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)
     fixed no-repeat;
   background-size: cover;
   width: 100%;
-} */
+}
 body {
   padding-top: 4em;
   font-family: "Teko", sans-serif;
@@ -40,12 +40,13 @@ button:focus {
 }
 .home-cta {
   background-color: #990000;
-  padding: 1em;
-  width: 15em;
-  margin: 1em;
-  margin-left: 16em;
+  padding: 0.5em;
+  width: 12em;
+  margin: 4em;
+  margin-left: 9em;
+  margin-top: 2em;
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
   border-radius: 0.25em;
   font-weight: 800;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
@@ -74,20 +75,25 @@ img {
 .home-header {
   font-family: "Teko", sans-serif;
   margin: 2.5em;
+  margin-left: 2em;
   color: black;
   text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
   font-size: 3em;
 }
-.home-header2 {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+.home-header2,
+.home-header3 {
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
   margin: 2em;
   margin-top: -2em;
-  margin-left: 6em;
-  color: whitesmoke;
+  margin-left: 4.9em;
+  color: black;
   font-family: "Teko", sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
+}
+.home-header3 {
+  margin: -1em 0 0.5em 5em;
 }
 .home-container {
   text-align: left;
