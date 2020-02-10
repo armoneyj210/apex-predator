@@ -121,9 +121,15 @@ export default class SingleWeapon extends Component {
               src={this.state.weapon.image_url}
               alt="weapon"
             />
-            <p className="weapon-desc">{this.state.weapon.weapon_type}</p>
-            <p className="weapon-desc">{this.state.weapon.description}</p>
-            <div className="char-desc">Ammo: {this.state.weapon.ammo}</div>
+            <p className="weapon-desc char-item">
+              {this.state.weapon.weapon_type}
+            </p>
+            <p className="weapon-desc char-item">
+              {this.state.weapon.description}
+            </p>
+            <div className="char-desc char-item">
+              Ammo: {this.state.weapon.ammo}
+            </div>
           </div>
         )}
         <div>

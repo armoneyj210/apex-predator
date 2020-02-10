@@ -158,22 +158,26 @@ export default class SingleCharacter extends Component {
               src={this.state.character.image_url}
               alt="character"
             />
-            <p className="char-desc">{this.state.character.background}</p>
+            <p className="char-desc char-item">
+              {this.state.character.background}
+            </p>
             <div className="char-desc">
-              <h3>Passive Ability:</h3>
-              <p>{this.state.character.passive_ability}</p>
+              <h3 className="char-item">Passive Ability:</h3>
+              <p className="char-item">
+                {this.state.character.passive_ability}
+              </p>
             </div>
             <div className="char-desc">
-              <h3>Tactical Ability:</h3>
-              <p>{this.state.character.ability}</p>
+              <h3 className="char-item">Tactical Ability:</h3>
+              <p className="char-item">{this.state.character.ability}</p>
             </div>
             <div className="char-desc">
-              <h3>Ultimate Ability:</h3>
-              <p>{this.state.character.super}</p>
+              <h3 className="char-item">Ultimate Ability:</h3>
+              <p className="char-item">{this.state.character.super}</p>
             </div>
             <div className="char-desc">
-              <h3>Kills:</h3>
-              <p>{this.state.character.kills}</p>
+              <h3 className="char-item">Kills:</h3>
+              <p className="char-item">{this.state.character.kills}</p>
             </div>
           </div>
         )}

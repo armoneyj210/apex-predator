@@ -64,6 +64,10 @@ img {
   width: 54.75%;
   height: 20em;
 }
+.char-item {
+  margin: 0 4em;
+  font-size: 2em;
+}
 .char-name,
 .char-desc,
 .weapon-desc,

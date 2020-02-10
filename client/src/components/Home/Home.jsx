@@ -5,7 +5,7 @@ export default class Home extends Component {
     return (
       <div>
         <div>
-          <video autoPlay loop>
+          <video autoPlay mute loop>
             <source src={video} type="video/mp4" />
           </video>
         </div>
