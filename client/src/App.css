@@ -162,3 +162,7 @@ video {
   z-index: -1;
   width: auto;
 }
+.skin-img {
+  width: 30%;
+  height: auto;
+}

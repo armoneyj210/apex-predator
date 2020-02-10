@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import SingleSkin from "./components/SingleSkin";
 import Character from "./components/Character";
 import Home from "./components/Home/Home";
 import Map from "./components/Map";
@@ -33,6 +33,7 @@ class App extends Component {
               path="/character/:characterId"
               component={SingleCharacter}
             />
+            <Route exact path="/skin/:skinId" component={SingleSkin} />
             <Route exact path="/weapon/:weaponId" component={SingleWeapon} />
             <Route path="/" component={Home} />
           </Switch>

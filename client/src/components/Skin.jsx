@@ -48,11 +48,15 @@ export default class Skin extends Component {
       return (
         <div className="skin-header ">
           <div className="skin-list">
-            <div className="skin-item">
-              <div className="skin-desc">
+            <div className="skin-item ">
+              <div className="skin-desc ">
                 <h3>{skin.name}</h3>
               </div>
-              <img src={skin.image_url} alt={skin.name} />
+              <div>
+                <Link to={`/skin/${skin.id}`}>
+                  <img src={skin.image_url} alt={skin.name} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
