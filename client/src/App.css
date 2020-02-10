@@ -133,7 +133,8 @@ img {
   margin-right: 1em;
 }
 .weapon-item,
-.map-item {
+.map-item,
+.skin-item {
   float: left;
   margin: 0.5em;
 }

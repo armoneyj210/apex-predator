@@ -52,9 +52,7 @@ export default class Skin extends Component {
               <div className="skin-desc">
                 <h3>{skin.name}</h3>
               </div>
-              <Link to={`/skin/${skin._id}`}>
-                <img src={skin.image_url} alt={skin.name} />
-              </Link>
+              <img src={skin.image_url} alt={skin.name} />
             </div>
           </div>
         </div>
