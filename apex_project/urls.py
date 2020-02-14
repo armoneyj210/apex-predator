@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('apex.urls'))
+     re_path(r'^.*$', views.FrontendAppView.as_view()),
 ]
