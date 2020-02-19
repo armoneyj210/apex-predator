@@ -134,6 +134,7 @@ img {
 }
 .navbar-item {
   padding: 1em;
+  font-size: 1.5em;
   text-decoration: none;
   margin-right: 1em;
 }
@@ -145,7 +146,7 @@ img {
 }
 .weapon-img {
   width: 55%;
-  height: 30em;
+  height: 32em;
 }
 .map-image {
   width: 30em;
