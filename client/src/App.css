@@ -72,14 +72,14 @@ img {
 }
 .char-img {
   width: 54.75%;
-  height: 30em;
+  height: 20em;
 }
 .single-char-img {
   width: 50%;
   height: 30em;
 }
 .char-item {
-  margin: 0 20em;
+  margin: 0 5em;
   padding-top: 1em;
   padding: 1em 3em 0;
   font-size: 2em;
@@ -168,7 +168,7 @@ img {
 }
 .weapon-img {
   width: 55%;
-  height: 32em;
+  height: 25em;
 }
 .map-item {
   display: flex;
