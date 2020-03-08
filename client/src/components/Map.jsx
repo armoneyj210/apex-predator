@@ -19,10 +19,11 @@ export default class Map extends Component {
       return (
         <div className="map-header">
           <div className="map-item">
-            <div className="map-list">
+            <div>
               <h1 className="map-desc">{map.name}</h1>
+
+              <img className="map-image" src={map.map_url} alt={map.name} />
             </div>
-            <img className="map-image" src={map.map_url} alt={map.name} />
           </div>
         </div>
       );

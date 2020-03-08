@@ -146,7 +146,7 @@ export default class SingleCharacter extends Component {
             </div>
             <br />
             <input
-              className="add-submit"
+              className="add-submit btn-text"
               type="submit"
               value="Save Character"
             />
@@ -154,7 +154,7 @@ export default class SingleCharacter extends Component {
         ) : (
           <div>
             <img
-              className="char-desc"
+              className="char-desc single-char-img"
               src={this.state.character.image_url}
               alt="character"
             />
@@ -162,28 +162,42 @@ export default class SingleCharacter extends Component {
               {this.state.character.background}
             </p>
             <div className="char-desc">
-              <h3 className="char-item">Passive Ability:</h3>
+              <h3 className="char-item">
+                {" "}
+                <span className="underline"> Passive Ability:</span>
+              </h3>
               <p className="char-item">
                 {this.state.character.passive_ability}
               </p>
             </div>
             <div className="char-desc">
-              <h3 className="char-item">Tactical Ability:</h3>
+              <h3 className="char-item">
+                {" "}
+                <span className="underline"> Tactical Ability:</span>
+              </h3>
               <p className="char-item">{this.state.character.ability}</p>
             </div>
             <div className="char-desc">
-              <h3 className="char-item">Ultimate Ability:</h3>
+              <h3 className="char-item">
+                <span className="underline">Ultimate Ability:</span>
+              </h3>
               <p className="char-item">{this.state.character.super}</p>
             </div>
             <div className="char-desc">
-              <h3 className="char-item">Kills:</h3>
+              <h3 className="char-item">
+                <span className="underline">Kills:</span>
+              </h3>
               <p className="char-item">{this.state.character.kills}</p>
             </div>
           </div>
         )}
         <div>
-          <button onClick={this.toggleEditForm}>Edit Character</button>
-          <button onClick={this.deleteButtonAction}>Delete Character</button>
+          <button onClick={this.toggleEditForm}>
+            <span className="btn-text">Edit Character</span>
+          </button>
+          <button onClick={this.deleteButtonAction}>
+            <span className="btn-text">Delete Character</span>
+          </button>
         </div>
       </div>
     );

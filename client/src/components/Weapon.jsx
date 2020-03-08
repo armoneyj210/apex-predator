@@ -46,8 +46,8 @@ export default class Weapon extends Component {
           description: ""
         }
       });
+      this.updatePage();
     });
-    this.updatePage();
   };
   render() {
     let weapons = this.state.weapon.map(weapon => {
@@ -68,9 +68,7 @@ export default class Weapon extends Component {
     return (
       <div>
         <h1 className="weapon-desc">Weapons</h1>
-        <div>
-          <button onClick={this.handleToggleNewForm}>Add New Weapon</button>
-        </div>
+
         <br />
         {this.state.weaponForm ? (
           <form onSubmit={this.handleSubmit}>

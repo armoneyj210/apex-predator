@@ -40,8 +40,8 @@ export default class Skin extends Component {
           image_url: ""
         }
       });
+      this.updatePage();
     });
-    this.updatePage();
   };
   render() {
     let skins = this.state.skin.map(skin => {
@@ -66,7 +66,10 @@ export default class Skin extends Component {
       <div>
         <h1 className="skin-desc">Skins</h1>
         <div>
-          <button onClick={this.handleToggleNewForm}>Add New Skin</button>
+          <button onClick={this.handleToggleNewForm}>
+            {" "}
+            <span className="btn-text"> Add New Skin</span>
+          </button>
         </div>
         <br />
         {this.state.skinForm ? (

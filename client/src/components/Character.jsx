@@ -51,8 +51,8 @@ export default class Character extends Component {
           kills: ""
         }
       });
+      this.updatePage();
     });
-    this.updatePage();
   };
   render() {
     let characters = this.state.character.map(character => {
@@ -172,7 +172,10 @@ export default class Character extends Component {
           characters
         )}
         <div>
-          <button onClick={this.handleToggleNewForm}>Add New Character</button>
+          <button onClick={this.handleToggleNewForm}>
+            {" "}
+            <span className="btn-text">Add New Character</span>
+          </button>
         </div>
       </div>
     );

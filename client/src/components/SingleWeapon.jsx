@@ -133,8 +133,14 @@ export default class SingleWeapon extends Component {
           </div>
         )}
         <div>
-          <button onClick={this.toggleEditForm}>Edit Weapon</button>
-          <button onClick={this.deleteButtonAction}>Delete Weapon</button>
+          <button onClick={this.toggleEditForm}>
+            {" "}
+            <span className="btn-text"> Edit Weapon</span>
+          </button>
+          <button onClick={this.deleteButtonAction}>
+            {" "}
+            <span className="btn-text"> Delete Weapon</span>
+          </button>
         </div>
       </div>
     );
